@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of, throwError } from 'rxjs';
 import { AuthUser } from '../models/auth-user.model';
@@ -10,7 +9,7 @@ import { USER_MOCK } from '../mock-data/user.mock';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthenticationService implements AuthenticationServiceBase {
+export class AuthenticationDevService implements AuthenticationServiceBase {
   constructor() {
     console.log('%c===== Authentication Service Mock Init =====', 'color: green; font-weight: bold;');
   }

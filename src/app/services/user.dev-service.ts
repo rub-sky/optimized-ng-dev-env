@@ -11,7 +11,7 @@ import { USER_MOCK } from '../mock-data/user.mock';
 @Injectable({
   providedIn: 'root'
 })
-export class UserService implements UserServiceBase {
+export class UserDevService implements UserServiceBase {
   constructor() {
     console.log('%c===== User Service Mock Init =====', 'color: green; font-weight: bold;');
   }

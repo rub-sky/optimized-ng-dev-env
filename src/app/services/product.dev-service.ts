@@ -10,7 +10,7 @@ import { productCartMock, productMock } from '../mock-data/products.mock';
 @Injectable({
   providedIn: 'root'
 })
-export class ProductService implements ProductServiceBase {
+export class ProductDevService implements ProductServiceBase {
   constructor() {
     console.log('%c===== Product Service Mock Init =====', 'color: green; font-weight: bold;');
   }
