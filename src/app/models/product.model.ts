@@ -1,3 +1,4 @@
+import { CartItem } from "./cart.model";
 import { Pagination } from "./pagination.model";
 
 export interface Product {
@@ -12,7 +13,6 @@ export interface Product {
   category: string;
   thumbnail: string;
   images: string[];
-    
 }
 
 export interface ProductsPaginated extends Pagination {

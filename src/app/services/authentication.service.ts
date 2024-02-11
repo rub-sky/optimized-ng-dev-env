@@ -2,12 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AuthUser } from '../models/auth-user.model';
-
+import { AuthenticationServiceBase } from './authentication.service.base';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AuthenticationService {
+export class AuthenticationService implements AuthenticationServiceBase {
   private readonly AUTH_URL = 'https://dummyjson.com/auth';
 
   constructor(private httpClient: HttpClient) { }

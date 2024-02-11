@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from '../models/user.model';
 import { CartsPaginated } from '../models/cart.model';
+import { UserServiceBase } from './user.service.base';
 
 /**
  * Endpoints used are from https://dummyjson.com/docs/users
@@ -10,7 +11,7 @@ import { CartsPaginated } from '../models/cart.model';
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class UserService implements UserServiceBase {
   private readonly USERS_URL = 'https://dummyjson.com/user';
 
   constructor(private httpClient: HttpClient) { }
