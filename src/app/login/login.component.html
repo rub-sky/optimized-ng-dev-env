@@ -1,1 +1,29 @@
-<p>login works!</p>
+<div class="container d-flex justify-content-center my-5">
+  <form #myForm="ngForm" [formGroup]="loginFormGroup" (submit)="loginUser()" class="col-12 col-sm-3">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Login</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div>
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>User Name</mat-label>
+            <input matInput type="text" [formControl]="userNameCtrl" placeholder="User Name">
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" [formControl]="passwordCtrl" placeholder="Password">
+          </mat-form-field>
+        </div>
+
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button type="reset" mat-flat-button (click)="myForm.reset()">Clear</button>
+        <button type="submit" mat-flat-button color="primary">Login</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+
+</div>

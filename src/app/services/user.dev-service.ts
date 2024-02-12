@@ -13,7 +13,7 @@ import { USER_MOCK } from '../mock-data/user.mock';
 })
 export class UserDevService implements UserServiceBase {
   constructor() {
-    console.log('%c===== User Service Mock Init =====', 'color: green; font-weight: bold;');
+    console.log('%c===== User Service Mock Init =====', 'color: cyan; font-weight: bold;');
   }
 
   public getAuthUser(): Observable<User> {

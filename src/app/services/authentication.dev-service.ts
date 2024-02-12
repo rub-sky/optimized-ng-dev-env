@@ -11,7 +11,7 @@ import { USER_MOCK } from '../mock-data/user.mock';
 })
 export class AuthenticationDevService implements AuthenticationServiceBase {
   constructor() {
-    console.log('%c===== Authentication Service Mock Init =====', 'color: green; font-weight: bold;');
+    console.log('%c===== Authentication Service Mock Init =====', 'color: cyan; font-weight: bold;');
   }
 
   public login(username: string, password: string): Observable<AuthUser> {
