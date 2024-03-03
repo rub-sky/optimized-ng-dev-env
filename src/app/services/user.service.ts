@@ -14,7 +14,9 @@ import { UserServiceBase } from './user.service.base';
 export class UserService implements UserServiceBase {
   private readonly USERS_URL = 'https://dummyjson.com/user';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+    console.log('%c===== User Service - [PROD] =====', 'color: orange; font-weight: bold;');
+  }
 
   public getAuthUser(): Observable<User> {
     return this.httpClient.get<User>(`${this.USERS_URL}/me`);

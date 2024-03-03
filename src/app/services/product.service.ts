@@ -13,7 +13,9 @@ import { Product, ProductCategories, ProductsPaginated } from '../models/product
 export class ProductService implements ProductServiceBase {
   private readonly PRODUCTS_URL = 'https://dummyjson.com/products';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+    console.log('%c===== Product Service - [PROD] =====', 'color: orange; font-weight: bold;');
+  }
 
   public getAllProductCategories(): Observable<ProductCategories> {
     return this.httpClient.get<ProductCategories>(`${this.PRODUCTS_URL}/categories`);

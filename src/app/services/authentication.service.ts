@@ -11,7 +11,10 @@ import { User } from '../models/user.model';
 export class AuthenticationService implements AuthenticationServiceBase {
   private readonly AUTH_URL = 'https://dummyjson.com/auth';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+    console.log('%c===== Authentication Service - [PROD] =====', 'color: orange; font-weight: bold;');
+
+  }
 
   public login(username: string, password: string): Observable<AuthUser> {
     return this.httpClient.post<AuthUser>(`${this.AUTH_URL}/auth/login`, {username, password});

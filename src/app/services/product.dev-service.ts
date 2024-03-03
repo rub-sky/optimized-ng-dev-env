@@ -12,7 +12,7 @@ import { productCartMock, productMock } from '../mock-data/products.mock';
 })
 export class ProductDevService implements ProductServiceBase {
   constructor() {
-    console.log('%c===== Product Service Mock Init =====', 'color: cyan; font-weight: bold;');
+    console.log('%c===== Product Service - [Mock] =====', 'color: cyan; font-weight: bold;');
   }
 
   public getAllProductCategories(): Observable<ProductCategories> {
