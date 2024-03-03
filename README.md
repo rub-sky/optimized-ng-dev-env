@@ -18,6 +18,12 @@ This mode integrates the service to the external resources, making calls to the 
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+### Adding Services
+In addition to creating any new services, the following must be completed as well.
+* Create an abstract service class
+* Copy the service to create a mock that implements the abstract class
+* Update the provider files for production and mock development to include the services
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
