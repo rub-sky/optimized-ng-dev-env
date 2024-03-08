@@ -6,7 +6,6 @@ import { UserService } from './services/user.service';
 import { HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +16,6 @@ import { MatIconModule } from '@angular/material/icon';
     MatToolbarModule,
     RouterModule,
     MatButtonModule,
-    MatIconModule,
   ],
   providers: [...APP_PROVIDERS],
   templateUrl: './app.component.html',
