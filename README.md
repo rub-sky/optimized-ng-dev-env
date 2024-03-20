@@ -9,10 +9,14 @@ This mode runs the application isolated from external dependencies and all calls
 
 ```npm run start-dev```
 
+Navigate to http://localhost:4200
+
 ### Integrated Mode
 This mode integrates the service to the external resources, making calls to the backend to get data.
 
 ```npm run start-dev-int```
+
+Navigate to http://localhost:4200
 
 ## Code scaffolding
 
